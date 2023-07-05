@@ -1,0 +1,12 @@
+extends layout.pug 
+block content 
+    .container
+      //- h1= article.title
+      //- p= article.content
+      //- div#article-data(data-article=JSON.stringify(article))
+      each obj in article
+        h1= obj.title
+        p= obj.content
+        div#article-data(data-article=JSON.stringify(article))
+        hr
+
